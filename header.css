@@ -20,6 +20,7 @@ color: rgb(189, 189, 189);
   transition: color 0.2s;
 }
 .content-holder{
+  z-index: 100;
   position: absolute;
   left:410px;
   width: 450px;
