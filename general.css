@@ -1,0 +1,97 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  height: 800px;
+}
+#home{
+  margin-top: 70px;
+  height:90vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: brown;
+}
+.image{
+  position: relative;
+width: 100%;
+height: 100%;
+}
+.image img{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(left to right , black, black);
+  z-index: 0;
+  object-fit: cover;
+  object-position: top;
+}
+.image::after{
+  content:"";
+  position:absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+background: linear-gradient(to right , rgba(0,0,0, 0.8)30%, rgba(0, 0, 0 , 0.1));
+z-index: 1;
+}
+.text{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 50px;
+  gap: 100px;
+  color: white;
+}
+.title p:last-child{
+text-transform: uppercase;
+font-size: 3rem;
+font-weight: bold;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 8rem;
+}
+.buttons{
+  display: flex;
+    gap: 2rem;
+}
+.buttons button{
+  padding: 15px 20px;
+  background-color:rgba(255, 127, 29, 0.909);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor:pointer;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.5s;
+}
+.buttons button:hover{
+  background-color:rgba(255, 111, 0, 0.909);
+}
+.buttons button:active{
+  background-color:rgba(255, 111, 0, 0.909);
+  opacity: 0.2;
+}
+.last{
+color:rgba(255, 111, 0, 0.909);
+filter: drop-shadow( 0 5px 25px rgba(0,0,0, 0.5));
+}
+
+/* MEDIA-QUERY */
+@media(max-width:580px){
+  .title p:last-child{
+    font-size: 2rem;
+    }
+    .text{
+      top: 110px;
+    }
+}

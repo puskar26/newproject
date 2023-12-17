@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pushkar Niraula</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="general.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="navbar">
+        <div class="logo">
+          <a href="#home"><img src="Icons/web-icon-removebg-preview.png" alt="Logo" /></a>
+        </div>
+
+        <div class="nav-items">
+          <a class="menu" href="">About</a>
+          <a class="menu" href="">Projects</a>
+          <a class="menu" href="">Contact</a>
+        </div>
+
+        <div class="ham">
+            <span id="openHam">&#9776;</span>
+            <span id="closeHam">&#x2716;</span>
+          </span>
+        
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <div class="image">
+          <img src="Images/1689859559894.jpg" alt="">
+        </div>
+        <div class="text">
+          <div class="title">
+            <p>I'm </p>
+             <p> <span class="first">Pushkar</span> <span class="last">Niraula</span></p>
+          </div>
+          <div class="info">
+            <p> I'm a <span class="web">Web Developer.</span><span class="programmer">Programmer. </span><span class="graphic"> Graphic Designer.</span>  </p>
+             <div class="buttons">
+               <button>Download CV</button>
+               <button>Send a Mail</button>
+             </div>
+          </div>
+        </div>
+      </section>
+      <section id="about"></section>
+      <section id="projects"></section>
+    </main>
+    <footer>
+      <section id="contact"></section>
+    </footer>
+    <script>
+     let closeHam= document.querySelector('#closeHam');
+     let openHam= document.querySelector('#openHam');
+     let navItems=document.querySelector('.nav-items');
+
+     const hamburgerEvent = (open, close, navitem) =>{
+      closeHam.style.display = close;
+      openHam.style.display = open;
+      navItems.style.display = navitem;
+     }
+     openHam.addEventListener('click', ()=>{
+      hamburgerEvent("none", "block", "flex")
+     });
+     closeHam.addEventListener('click', ()=>{
+      hamburgerEvent("block", "none", "none")
+     });
+    </script>
+  </body>
+</html>
