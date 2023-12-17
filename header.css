@@ -44,6 +44,11 @@ box-shadow: 0 5px 25px rgba(0,0,0, 0.5);
   color: white;
   background-color: rgba(2, 60, 219, 0.909);
 }
+.nav-items > a:active{
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(2, 60, 219, 0.909);
+}
 .ham{
   display: none;
   font-size: 2.5rem;
