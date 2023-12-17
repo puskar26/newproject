@@ -83,7 +83,7 @@ font-weight: bold;
 }
 .last{
 color:rgba(255, 111, 0, 0.909);
-filter: drop-shadow( 0 5px 25px rgba(0,0,0, 0.5));
+filter: drop-shadow( 0 5px 15px rgba(0,0,0, 0.7));
 }
 
 /* MEDIA-QUERY */
@@ -91,7 +91,17 @@ filter: drop-shadow( 0 5px 25px rgba(0,0,0, 0.5));
   .title p:last-child{
     font-size: 2rem;
     }
+ 
     .text{
-      top: 110px;
+      top: 115px;
+      padding-left: 20px;
     }
+
+.image::after{
+  background: linear-gradient(to right , rgba(0,0,0, 0.8)15%, rgba(0, 0, 0 , 0.1));
+
+}
+.info{
+  gap: 6rem;
+}
 }
